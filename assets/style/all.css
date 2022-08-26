@@ -1,0 +1,77 @@
+.ck-editor__editable[role="textbox"] {
+  /* editing area */
+  min-height: 200px; }
+
+.ck-content .image {
+  /* block images */
+  max-width: 80%;
+  margin: 20px auto; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #212529; }
+
+aside {
+  min-width: 296px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 32px; }
+
+main {
+  margin-left: 296px; }
+
+small {
+  font-size: 12px; }
+
+.mono {
+  font-family: 'Roboto Mono', monospace; }
+
+.fz-sm {
+  font-size: 14px; }
+
+.list-active {
+  color: #198754;
+  position: relative; }
+  .list-active:hover {
+    color: #198754; }
+  .list-active::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    top: 14px;
+    bottom: 0;
+    left: -32px;
+    background-color: #198754; }
+
+.light-gray {
+  color: #6c757d; }
+
+.avatar {
+  width: 40px;
+  height: 40px; }
+
+.assign-list-active {
+  background-color: #f8f9fa; }
+
+.assign-list a:hover {
+  background-color: #f8f9fa; }
+
+.line-clamp {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
+
+.icon-hover:hover {
+  color: #198754; }
+
+.member-photo {
+  width: 141px;
+  height: 141px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/*# sourceMappingURL=all.css.map */
