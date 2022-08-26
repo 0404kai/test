@@ -10,13 +10,12 @@ $(function () {
 "use strict";
 
 $(function () {
-  if (location.pathname == '../../index.html') {
+  if (location.pathname == '../.././index.html') {
     $('#assignment').addClass('list-active');
-  } else if (location.pathname == '../../admin.html') {
+  } else if (location.pathname == '../.././admin.html') {
     $('#admin').addClass('list-active');
   }
 });
-console.log(location.pathname);
 "use strict";
 
 CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
