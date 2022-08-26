@@ -1,0 +1,228 @@
+---
+title: ANSWER 後台頁面
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <div class="container">
+    <header class="p-4 d-flex justify-content-between">
+      <div class="d-flex">
+        <h2 class="me-5 fs-4 fw-bold">Assignment</h2>
+        <div class="dropdown fw-bold">
+          <a href="#" class="text-decoration-none link-dark align-bottom icon-hover" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">All Courses
+            <span class="material-symbols-rounded ms-2 align-bottom text-success">
+              expand_more
+            </span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex">
+        <li class="me-4"><a href="#" class="link-dark icon-hover">
+            <span class="material-symbols-rounded">
+              search
+            </span>
+          </a></li>
+        <li><a href="#" class="link-dark icon-hover">
+            <span class="material-symbols-rounded">
+              notifications_active
+            </span>
+          </a></li>
+      </ul>
+    </header>
+
+    <section class="d-flex p-4 pt-0">
+      <!-- 回覆列表 -->
+      <section class="w-25 me-3">
+        <div class="dropdown fw-bold mb-2">
+          <a href="#" class="text-decoration-none link-dark align-bottom" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false"> All(4)
+            <span class="material-symbols-rounded ms-2 align-bottom text-success">
+              expand_more
+            </span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list-group list-group-flush text-nowrap assign-list">
+            <li class="list-group-item p-0">
+              <a href="#" class="d-block text-decoration-none link-dark p-3 assign-list-active">
+                <div class="d-flex justify-content-between mb-1">
+                  <small>Chapter Assignment 2</small>
+                  <small>4 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-bold line-clamp">Please check this file for me, thanks!</p>
+                  <small class="light-gray">Emily Wang</small>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item p-0">
+              <a href="#" class="d-block text-decoration-none link-dark p-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <small>Chapter Assignment 1</small>
+                  <small>12 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-bold line-clamp">My Homework</p>
+                  <small class="light-gray">David Xu</small>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item p-0">
+              <a href="#" class="d-block text-decoration-none link-dark p-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <small>Final Assignment</small>
+                  <small>18 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-bold line-clamp">Have a problem with this…</p>
+                  <small class="light-gray">Tony Wei</small>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item p-0">
+              <a href="#" class="d-block text-decoration-none link-dark p-3">
+                <div class="d-flex justify-content-between mb-1">
+                  <small>Final Assignment</small>
+                  <small>19 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0 fw-bold line-clamp">Did I do it right?</p>
+                  <small class="light-gray">Christina Lin</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </section>
+      <!-- 回覆內容 -->
+      <section class="w-75">
+        <p class="light-gray text-end mb-2">2 comments</p>
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <div>
+              <small>Chapter Assignment 2 / HTML&CSS</small>
+              <p class="mb-0 fw-bold">Please check this file for me, thanks!</p>
+            </div>
+            <a href="#" class="link-dark icon-hover"> <span class="material-symbols-rounded">
+                more_vert
+              </span></a>
+          </div>
+          <div class="card-body">
+            <!-- 學生回覆 -->
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/emilywang.jpeg" alt="photo" class="rounded-circle me-2 avatar">
+              <div>
+                <p class="mb-0 fw-bold">Emily Wang</p>
+                <span class="light-gray">10:38 AM (4 hours ago)</span>
+              </div>
+            </div>
+            <div class="ms-5 me-3 border-bottom border-2">
+              <p class="fz-sm">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why
+                in the following code the height of the <code class="text-success">div</code> is bigger than the height
+                of
+                the <code class="text-success">img</code> ? There is a gap below the image, but it doesn’t seems to be a
+                padding/margin.<br> What is the gap or extra space below image?</p>
+              <a href="#" class="btn btn-outline-secondary mb-3" download="HW-2-David.zip"><span
+                  class="material-symbols-rounded align-bottom">
+                  attach_file
+                </span>HW-2-David.zip</a>
+            </div>
+            <!-- 助教回覆 -->
+            <div class="answer mt-3 me-3">
+              <div class="d-flex mb-3 justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/andychen.jpeg" alt="photo" class="rounded-circle me-2 avatar">
+                  <div>
+                    <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                    <span class="light-gray">13:24 AM (1 hours ago)</span>
+                  </div>
+                </div>
+                <ul class="list-unstyled d-flex ms-auto">
+                  <li class="me-4"><a href="#" class="link-dark icon-hover">
+                      <span class="material-symbols-rounded ">
+                        grade
+                      </span>
+                  <li><a href="#" class="link-dark icon-hover"><span class="material-symbols-rounded align-bottom">
+                        edit
+                      </span></a></li>
+                </ul>
+              </div>
+              <div class="ms-5 fz-sm">
+                <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a,
+                  b, c and d sit on. There is space below that line for the descenders you find on letters like
+                  g,
+                  j,
+                  p and q.</p>
+                <p>You can:</p>
+                <ul class="list-unstyled ms-3">
+                  <li> • adjust the <code class="text-success">vertical-align</code> of the image to position it
+                    elsewhere
+                    (e.g.
+                    the <code class="text-success">middle</code> ) or</li>
+                  <li> • change the <code class="text-success">display</code> so it isn’t inline.</li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ckeditor插件 -->
+        <div class="editor d-none">
+          <div id="editor">
+          </div>
+        </div>
+
+        <footer class="d-flex justify-content-between align-items-center mt-3">
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="link-dark me-4 icon-hover"><span class="material-symbols-rounded fs-6 align-bottom">
+                  arrow_back_ios
+                </span></a></li>
+            <li><a href="#" class="link-dark icon-hover"><span class="material-symbols-rounded fs-6 align-bottom">
+                  arrow_forward_ios
+                </span></a></li>
+          </ul>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="btn btn-outline-success px-4 d-none me-2 cancel">Cancel</a></li>
+            <li><a href="#" class="btn btn-outline-success px-4 me-2 mark">Mark as read</a></li>
+            <li><a href="#" class="btn btn-success px-4 reply">Reply</a></li>
+          </ul>
+        </footer>
+
+      </section>
+
+    </section>
+
+  </div>
+</main>
+
+
+
+
+<script>
+  ClassicEditor
+    .create(document.querySelector('#editor'))
+    .catch(error => {
+      console.error(error);
+    });
+</script>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/35.0.1/super-build/ckeditor.js"></script>
+<script src="./assets/js/ckeditor5.js"></script>
+
+<script src="./assets/js/index.js"></script>

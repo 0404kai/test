@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color:$gray-900;
+}
+aside{
+    min-width:296px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 32px;
+}
+main{
+    margin-left: 296px;  
+}
+small{
+    font-size: 12px;
+  }
+
+.mono{
+    font-family: 'Roboto Mono', monospace;
+}
+.fz-sm{
+    font-size: 14px;
+  }
+  
+.list-active{
+    color: $success;
+    position: relative;
+    &:hover{
+        color: $success;
+    }
+    &::before{
+        content:"";
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        top: 14px;
+        bottom: 0;
+        left: -32px;
+        background-color: $success;
+    }
+}
+
+.light-gray{
+    color: $gray-600;
+}
+.avatar{
+    width:40px; 
+    height:40px;
+}

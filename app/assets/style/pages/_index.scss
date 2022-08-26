@@ -1,0 +1,19 @@
+.assign-list{
+    &-active{
+      background-color: $light;
+    }
+    a:hover{
+      background-color: $light;
+    }
+  }
+  
+  .line-clamp{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .icon-hover:hover{
+    color:$success;
+  }
+  
