@@ -16,6 +16,7 @@ $(function () {
     $('#admin').addClass('list-active');
   }
 });
+console.log(location.pathname);
 "use strict";
 
 CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
