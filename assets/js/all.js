@@ -16,6 +16,10 @@ $(function () {
     $('#admin').addClass('list-active');
   }
 });
+console.log('1', location.pathname);
+console.log('2', window.location.pathname);
+console.log('3', location.href);
+console.log('4', window.location.href);
 "use strict";
 
 CKEDITOR.ClassicEditor.create(document.getElementById("editor"), {
