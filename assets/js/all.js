@@ -10,9 +10,9 @@ $(function () {
 "use strict";
 
 $(function () {
-  if (location.pathname == '/test/index.html') {
+  if (window.location.pathname == '/test/index.html') {
     $('#assignment').addClass('list-active');
-  } else if (location.pathname == '/test/admin.html') {
+  } else if (window.location.pathname == '/test/admin.html') {
     $('#admin').addClass('list-active');
   }
 });
